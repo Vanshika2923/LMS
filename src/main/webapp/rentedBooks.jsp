@@ -32,7 +32,7 @@
 			PreparedStatement p1= connection.prepareStatement("select * from book_rent");
 			ResultSet re= p1.executeQuery();
 			
-			out.println("<html><body><h2><br><br><br><center><table border='4'><tr><td> Book Name </td><td> Author Name </td><td> Student Student Name </td></tr>");
+			out.println("<html><body><h2><br><br><br><center><table border='4'><tr><td> Book Name </td><td> Author Name </td><td> Student Name </td></tr>");
 			while(re.next()){
 		
 				bname= re.getString("book_name");
